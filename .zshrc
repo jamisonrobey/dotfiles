@@ -108,7 +108,7 @@ export EDITOR="/usr/local/bin/nvim"
 alias conf="cd ~/.config/"
 alias i3conf="nvim ~/.config/i3/config"
 alias ts="tomatoshell -t 50"
-alias update="sudo apt update && sudo apt upgrade -y && flatpak update && sudo snap refresh"
+alias update="~/dotfiles/.bin/update.sh"
 alias ls="ls --color=auto"
 export PATH=$PATH:/home/jamison/.spicetify
 
