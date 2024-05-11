@@ -186,7 +186,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 bindsym $mod+p move workspace to output right
 
-
+gaps inner 10px
 exec_always --no-startup-id ~/.bin/xrandr_config.sh
 exec_always --no-startup-id nitrogen --restore
 
