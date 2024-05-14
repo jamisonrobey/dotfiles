@@ -191,8 +191,7 @@ exec_always --no-startup-id nitrogen --restore
 
 exec_always --no-startup-id ~/.bin/polybar_start.sh
 
-exec_always --no-startup-id picom &
-
+exec_always --no-startup-id picom -b
 
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show

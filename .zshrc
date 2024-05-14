@@ -102,6 +102,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Created by `pipx` on 2024-04-25 07:41:54
+source ~/.nvm/nvm.sh
 export PATH="$PATH:/home/jamison/.local/bin"
 export PATH="$PATH:/home/jamison/.cargo/bin"
 export EDITOR="/usr/local/bin/nvim"
@@ -111,7 +112,6 @@ alias ts="tomatoshell -t 50"
 alias update="~/dotfiles/.bin/update.sh"
 alias ls="ls --color=auto"
 export PATH=$PATH:/home/jamison/.spicetify
-
 
 
 
