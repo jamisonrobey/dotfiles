@@ -127,6 +127,20 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
+
+# bind workspace to monitor
+
+workspace 1 output HDMI-0
+workspace 2 output HDMI-0
+workspace 3 output HDMI-0
+workspace 4 output DP-2
+workspace 5 output DP-2
+workspace 6 output DP-2
+workspace 7 output DVI-D-0
+workspace 8 output DVI-D-0
+workspace 9 output DVI-D-0
+workspace 10 output DVI-D-0
+
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
 bindsym $mod+2 workspace number $ws2
