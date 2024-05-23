@@ -102,7 +102,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Created by `pipx` on 2024-04-25 07:41:54
-source ~/.nvm/nvm.sh
 export PATH="$PATH:/home/jamison/.local/bin"
 export PATH="$PATH:/home/jamison/.cargo/bin"
 export EDITOR="/usr/local/bin/nvim"
@@ -115,3 +114,8 @@ export PATH=$PATH:/home/jamison/.spicetify
 
 
 
+source /usr/share/nvm/init-nvm.sh
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
