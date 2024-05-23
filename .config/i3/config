@@ -205,7 +205,7 @@ exec_always --no-startup-id nitrogen --restore
 
 exec_always --no-startup-id ~/.bin/polybar_start.sh
 
-exec_always --no-startup-id picom -b
+exec_always --no-startup-id picom -b --fade-in-step=1 --fade-out-step=1 --fade-delta=0
 
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
@@ -220,3 +220,4 @@ bindsym $mod+q exec rofi -show find -modi find:~/.local/share/rofi/finder.sh
 bindsym $mod+Shift+Ctrl+L exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 gaps inner 10px
+
