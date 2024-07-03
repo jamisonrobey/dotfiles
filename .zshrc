@@ -1,4 +1,4 @@
-if [ "$TMUX" = "" ]; then tmux; fi
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -107,13 +107,23 @@ export PATH="$PATH:/home/jamison/.cargo/bin"
 export EDITOR="/usr/local/bin/nvim"
 alias conf="cd ~/dotfiles/.config/"
 alias i3conf="nvim ~/dotfiles/.config/i3/config"
-alias ts="tomatoshell -t 50"
+alias ts="tomatoshell -t 50 -f"
 alias update="~/dotfiles/.bin/update.sh"
 alias ls="ls --color=auto"
+alias zshrc="nvim ~/dotfiles/.zshrc"
+alias ff="fastfetch"
+alias get="yay -S"
+alias build="npm run build"
+alias dev="npm run dev"
+alias prod="npm start"
+alias srcshell="source ~/.zshrc"
+
 export PATH=$PATH:/home/jamison/.spicetify
 
 
+# fnm
+export PATH="/home/jamison/.local/share/fnm:$PATH"
+eval "`fnm env`"
+export PATH=/opt/cuda/bin${PATH:+:${PATH}}
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+

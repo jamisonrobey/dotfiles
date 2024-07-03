@@ -130,16 +130,16 @@ set $ws10 "10"
 
 # bind workspace to monitor
 
-workspace 1 output HDMI-1
-workspace 2 output HDMI-1
-workspace 3 output HDMI-1
-workspace 4 output DP-2
-workspace 5 output DP-2
-workspace 6 output DP-2
-workspace 7 output DVI-D-1
-workspace 8 output DVI-D-1
-workspace 9 output DVI-D-1
-workspace 10 output DVI-D-1
+#workspace 1 output HDMI-0
+#workspace 2 output HDMI-0
+#workspace 3 output HDMI-0
+#workspace 4 output DP-2
+#workspace 5 output DP-2
+#workspace 6 output DP-2
+#workspace 7 output DVI-D-0
+#workspace 8 output DVI-D-0
+#workspace 9 output DVI-D-0
+#workspace 10 output DVI-D-0
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -213,9 +213,8 @@ bindsym $mod+minus scratchpad show
 bindsym Print exec flameshot gui
 
 
-bindsym $mod+t exec --no-startup-id  google-chrome --password-store=gnome --new-window "http://google.com"
+bindsym $mod+t exec --no-startup-id  google-chrome-stable --new-window "google.com"
 
-bindsym $mod+q exec rofi -show find -modi find:~/.local/share/rofi/finder.sh
 
 bindsym $mod+Shift+Ctrl+L exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
