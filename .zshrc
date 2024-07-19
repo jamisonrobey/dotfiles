@@ -92,6 +92,7 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -119,10 +120,19 @@ alias srcshell="source ~/.zshrc"
 
 export PATH=$PATH:/home/jamison/.spicetify
 
+#miniconda
+# export PATH="/opt/miniconda3/bin:$PATH"  # commented out by conda initialize  
+export CRYPTOGRAPHY_OPENSSL_NO_LEGACY=1
 
 # fnm
 export PATH="/home/jamison/.local/share/fnm:$PATH"
 eval "`fnm env`"
 export PATH=/opt/cuda/bin${PATH:+:${PATH}}
+
+
+
+
+
+
 
 

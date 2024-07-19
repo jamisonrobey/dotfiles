@@ -218,5 +218,5 @@ bindsym $mod+t exec --no-startup-id  google-chrome-stable --new-window "google.c
 
 bindsym $mod+Shift+Ctrl+L exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
-gaps inner 10px
 
+gaps inner 20px
